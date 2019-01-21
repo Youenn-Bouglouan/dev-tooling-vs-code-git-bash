@@ -60,6 +60,10 @@ C#, F#, Elm, Elixir, Kotlin, Go, Rust, JavaScript
 4. Disable extensions per workspace
 
 
+```json
+// add this to launch.json
+"ASPNETCORE_URLS": "http://localhost:5555"
+```
 
 ---
 ## <span style="color:orange">Git Bash</span>
