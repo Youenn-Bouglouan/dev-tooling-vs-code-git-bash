@@ -71,6 +71,9 @@ C#, F#, Elm, Elixir, Kotlin, Go, Rust, JavaScript
 ---
 ## <span style="color:orange">Git Bash</span>
 
-```bash
-mkdir test
-```
+1. Setup
+2. Overall functioning
+3. Why not another terminal / shell?
+4. Aliases
+5. Most useful commands
+6. Demo!
