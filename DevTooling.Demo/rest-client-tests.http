@@ -1,6 +1,10 @@
 @host = http://localhost:5555
 @token = Bearer <copy your token here>
 
+### https://jsonplaceholder.typicode.com/
+###
+GET https://jsonplaceholder.typicode.com/todos/2
+
 ###
 GET {{host}}/api/customers
 
