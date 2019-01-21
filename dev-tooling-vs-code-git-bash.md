@@ -7,13 +7,15 @@
 
 Available for free at <b>https://code.visualstudio.com/</b>
 
+Amongst others:
 - text editor on steroids
 - advanced IDE functionalities like Intellisense, debugging, code navigation
 - lightweight
 - cross-platform (Windows / Linux / Mac)
 - integrated console / terminal
+- built-in git support
 - built-in markdown support
-- built-in CSS / HTML support
+- built-in file comparison / diff tool
 
 ### <span style="color:orange">Languages supported</span>
 
@@ -33,10 +35,11 @@ C#, F#, Elm, Elixir, Kotlin, Go, Rust, JavaScript
 
 ### <span style="color:orange">Useful extensions</span>
 
-1. 
-1. <b>REST Client</b> - Send HTTP requests and display responses
-2. <b>Excel Viewer</b> - preview Excel and CSV files
-3. <b>Bookmarks</b> - create bookmarks in your code and quickly jump between them
+1. <b>GitLens</b> - add advanced git support directly from your files
+2. <b>REST Client</b> - send HTTP requests and display responses
+3. <b>Excel Viewer</b> - preview Excel and CSV files
+4. <b>Bookmarks</b> - create bookmarks in your code and quickly jump between them
+5. <b>vscode-icons</b> - nice set of icons for the file explorer
 
 ### <span style="color:orange">Useful shortcuts</span>
 
