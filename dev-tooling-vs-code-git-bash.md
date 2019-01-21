@@ -61,13 +61,6 @@ C#, F#, Elm, Elixir, Kotlin, Go, Rust, JavaScript
 
 
 
-
-
-
-
-
-
-
 ---
 ## <span style="color:orange">Git Bash</span>
 
@@ -75,5 +68,8 @@ C#, F#, Elm, Elixir, Kotlin, Go, Rust, JavaScript
 2. Overall functioning
 3. Why not another terminal / shell?
 4. Aliases
-5. Most useful commands
-6. Demo!
+5. Most useful Unix commands
+6. Docker commands
+7. Git commands
+8. Scripting
+9. Demo!
