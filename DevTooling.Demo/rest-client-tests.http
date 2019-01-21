@@ -1,0 +1,37 @@
+@host = http://localhost:5555
+@token = Bearer <copy your token here>
+
+###
+GET {{host}}/api/customers
+
+### This is for an endpoint that would require JWT authorization
+GET {{host}}/api/customers
+Authorization: {{token}}
+
+###
+PUT {{host}}/api/customers
+content-type: application/json
+
+{
+    "customerId": 6,
+    "customerName": "Tomak Nowak",
+    "tags": [""],
+    "address": {
+        "city": "Wroclaw",
+        "country": "Poland"
+    }
+}
+
+###
+GET {{host}}/api/customers/1
+
+###
+POST {{host}}/api/customers/1/address
+content-type: application/json
+
+{
+    "address": {
+        "city": "Cracow",
+        "country": "Poland"
+    }
+}
