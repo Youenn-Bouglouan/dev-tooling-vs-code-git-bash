@@ -126,6 +126,10 @@ alias refresh='source ~/.bashrc'
 ### <span style="color:orange">Useful commands (Unix and other)</span>
 
 ```bash
+# General Windows commands
+> explorer . # open the Windows file explorer in the current location
+> code . # open VS code in the the current location
+
 # General Unix commands
 > mkdir my-folder # create a new folder called my-folder
 > touch file.txt # create a new file called file.txt
