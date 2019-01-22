@@ -1,25 +1,34 @@
 @host = http://localhost:5555
 @token = Bearer <copy your token here>
 
-### https://jsonplaceholder.typicode.com/
+# ---------------------------------------------------------------------------------
+
+### hitting the World Wide Web!
 ###
 GET https://jsonplaceholder.typicode.com/todos/2
 
+# ---------------------------------------------------------------------------------
+
+### This is for an endpoint that would require JWT authorization
+GET {{host}}/api/some-endpoint-with-auth
+Authorization: {{token}}
+
+# ---------------------------------------------------------------------------------
+# Testing our own C# customers web service
+
 ###
 GET {{host}}/api/customers
 
-### This is for an endpoint that would require JWT authorization
-GET {{host}}/api/customers
-Authorization: {{token}}
+###
+GET {{host}}/api/customers/1
 
 ###
 PUT {{host}}/api/customers
 content-type: application/json
 
 {
-    "customerId": 6,
-    "customerName": "Tomak Nowak",
-    "tags": [""],
+    "name": "Tomak Nowak",
+    "tags": [ "Pierogi", "Bimber" ],
     "address": {
         "city": "Wroclaw",
         "country": "Poland"
@@ -27,15 +36,10 @@ content-type: application/json
 }
 
 ###
-GET {{host}}/api/customers/1
-
-###
 POST {{host}}/api/customers/1/address
 content-type: application/json
 
 {
-    "address": {
-        "city": "Cracow",
-        "country": "Poland"
-    }
+    "city": "Cracow",
+    "country": "Poland"
 }
