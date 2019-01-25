@@ -23,7 +23,7 @@ GET {{host}}/api/customers
 GET {{host}}/api/customers/1
 
 ###
-PUT {{host}}/api/customers
+POST {{host}}/api/customers
 content-type: application/json
 
 {
@@ -36,7 +36,7 @@ content-type: application/json
 }
 
 ###
-POST {{host}}/api/customers/1/address
+PUT {{host}}/api/customers/1/address
 content-type: application/json
 
 {
