@@ -34,7 +34,7 @@ namespace DevTooling.Demo.Core.Controllers
             return Ok(customer);
         }
 
-        [HttpPut]
+        [HttpPost]
         public IActionResult Create([Required] Customer customer)
         {
             var customerId = CustomersStore.Count + 1;
@@ -44,7 +44,7 @@ namespace DevTooling.Demo.Core.Controllers
             return StatusCode(201, $"customer '{customerId}' created");
         }
 
-        [HttpPost("{customerId}/address")]
+        [HttpPut("{customerId}/address")]
         public IActionResult UpdateAddress([Required] int customerId, [Required, FromBody] Address updatedAddress)
         {
             var customer = CustomersStore.FirstOrDefault(c => c.Id == customerId);
